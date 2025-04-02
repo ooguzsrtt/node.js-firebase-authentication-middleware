@@ -6,7 +6,7 @@ const PATH_TO_SERVICE_ACCOUNT = process.env.PATH_TO_SERVICE_ACCOUNT;
 var serviceAccount = require(PATH_TO_SERVICE_ACCOUNT);
 
 fbase.initializeApp({
-  credential: fbase.credential.cert(serviceAccount)
+	credential: fbase.credential.cert(serviceAccount)
 });
 
 

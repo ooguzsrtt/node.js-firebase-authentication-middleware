@@ -5,9 +5,7 @@ var controllerFirebase = require("../controller/firebase-controller");
 var tokenMiddleware = require("../middlewares/token-middleware");
 
 
-
 router.post("/token", controllerFirebase.searchToken);
-
 
 
 router.get("/", tokenMiddleware.verifyToken, (req, res, next) => {
