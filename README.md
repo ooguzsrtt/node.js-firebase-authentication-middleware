@@ -16,8 +16,8 @@ This middleware:
 Clone the repository and install dependencies:
 
 ```sh
-git clone https://github.com/yourusername/token-middleware.git
-cd token-middleware
+git clone https://github.com/ooguzsrtt/node.js-firebase-authentication-middleware
+cd node.js-firebase-authentication-middleware
 npm install
 ```
 
@@ -26,10 +26,10 @@ npm install
 Create a `.env` file based on the `.env_SCHEME` provided:
 
 ```env
-JWT_SECRET=your_jwt_secret
-RATE_LIMIT=5
-RATE_LIMIT_WINDOW=15 # in minutes
-PATH_TO_SERVICE_ACCOUNT=your_service_account.json
+TOKEN_LIMIT=5
+JWT_SECRET="YOUR_JWY_SECRET"
+JWT_EXPIRE="15m"
+PATH_TO_SERVICE_ACCOUNT = { "PATH_TO_SERVICE_ACCOUNT PROVIDED BY FIREBASE" }
 ```
 
 Download your Firebase service account JSON file from Firebase Console and place it in the root directory. Update the `.env` file accordingly.
